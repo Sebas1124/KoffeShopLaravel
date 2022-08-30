@@ -12,6 +12,17 @@ debemos ejecutar el comando Php artisan serve, esto ejecutará la aplicacion en 
 
 es decir: 127.0.0.1:8000
 
+Para usar el metodo de pago debemos utilizar una tarjeta de prueba que MERCADOPAGO nos provee en este caso pueden utilizar estas:
+
+ES IMPORTANTE USAR EL CORREO DE @TESTUSER YA QUE SE ENCUENTRA EN MODO SAMBOX
+
+Mastercard	5254 1336 7440 3564	ccv:123	 Fecha: 11/25  nombre: APRO CC: 123456789 email: test_user_55873468@testuser.com
+
+Visa	4013 5406 8274 6260	ccv:123	 Fecha: 11/25  nombre: APRO CC: 123456789 email: test_user_55873468@testuser.com
+
+American Express	3743 781877 55283	1234	11/25	ccv:123	 Fecha: 11/25  nombre: APRO CC: 123456789 email: test_user_55873468@testuser.com
+
+
 ### NOTA ###
 
 Debido a la ultima actualizacion de Laravel, este ya utiliza Vite como motor de procesado, esto lo hace un poco más eficiente a la hora de cargar nuestras aplicaciones, pero esto añade un paso, solo si es necesario y se lanza un error apenas entrar al aplicativo, la solucion es en la terminal dentro de la carpeta raiz, debemos ejecuar el comando "Npm run dev" Esto solucionará el error y te permitirá navegar sin problemas
