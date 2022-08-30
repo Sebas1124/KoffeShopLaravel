@@ -14,6 +14,8 @@ es decir: 127.0.0.1:8000
 
 Para usar el metodo de pago debemos utilizar una tarjeta de prueba que MERCADOPAGO nos provee en este caso pueden utilizar estas:
 
+https://www.mercadopago.com.co/developers/es/docs/checkout-pro/additional-content/test-cards
+
 ES IMPORTANTE USAR EL CORREO DE @TESTUSER YA QUE SE ENCUENTRA EN MODO SAMBOX
 
 Mastercard	5254 1336 7440 3564	ccv:123	 Fecha: 11/25  nombre: APRO CC: 123456789 email: test_user_55873468@testuser.com
