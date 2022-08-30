@@ -45,10 +45,10 @@
                         @auth
                         <li class="nav__item"><a href="{{ route('dashboard') }}" class="nav__link">Admin</a></li>
                         @else
-                        <li class="nav__item"><a href="{{ route('login') }}" class="nav__link">Log in</a></li>
+                        <li class="nav__item"><a href="{{ route('login') }}" class="nav__link">Inicia Sesión</a></li>
                         
                         @if (Route::has('register'))
-                        <li class="nav__item"><a href="{{ route('register') }}" class="ml-4 nav__link">Register</a></li>
+                        <li class="nav__item"><a href="{{ route('register') }}" class="ml-4 nav__link">Registrate</a></li>
                         @endif
                         @endauth
                         

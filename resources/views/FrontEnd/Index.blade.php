@@ -212,9 +212,12 @@
                         </p>
 
                         <div class="quality__buttons">
-                            <button class="button">
-                                Comprar AHORA!
-                            </button>
+                            <form action="{{ route('cart.add',$most_sales->id_product) }}" method="post">
+                                @csrf
+                                <button class="button">
+                                    Comprar AHORA!
+                                </button>
+                            </form>
 
                             <a href="#" class="quality__button">
                                 Ver más
@@ -247,9 +250,12 @@
                         </p>
 
                         <div class="quality__buttons">
-                            <button class="button">
-                                Comprar AHORA!
-                            </button>
+                            <form action="{{ route('cart.add',$most_stock->id_product) }}" method="post">
+                                @csrf
+                                <button class="button">
+                                    Comprar AHORA!
+                                </button>
+                            </form>
 
                             <a href="#" class="quality__button">
                                 Ver más
@@ -288,6 +294,18 @@
     title: 'Oops...',
     text: 'La compra fue cancelada',
     footer: 'vuelve a intentarlo'
+    })
+</script>
+    
+@endif
+@if (session('no_stock') == 'ok')
+
+<script>
+    Swal.fire({
+    icon: 'error',
+    title: 'Oops...',
+    text: 'No hay stock de este producto',
+    footer: 'Lo sentimos vuelve a intentarlo más tarde'
     })
 </script>
     

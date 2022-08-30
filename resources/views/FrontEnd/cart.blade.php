@@ -28,6 +28,7 @@
             <h1><strong><span class="item-quantity">{{$p->quantity}}</span> x {{$p->name}}</strong></h1>
             <p><strong>{{$p->descripcion}}</strong></p>
             <p>Codigo de producto - {{$p->plu}}</p>
+            <p>Stock de producto - {{$p->stock}}</p>
           </div>
         </div>
         <div class="price">{{number_format( $p->price)}}</div>

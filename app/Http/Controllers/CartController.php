@@ -30,6 +30,8 @@ class CartController extends Controller
         $id = Auth::id();
         $product = Products::FindOrFail($id_product);
 
+        if ($product->stock <= 0) return redirect()->route('home')->with('no_stock','ok');
+
         $product_exist = Cart::WHERE(['id_user' => $id, 'id_product' => $id_product])->exists();
 
         // Validations
